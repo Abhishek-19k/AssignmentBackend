@@ -1,4 +1,3 @@
-// app.js
 const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
@@ -9,7 +8,7 @@ const WEATHER_API_KEY = "a4d1ec6bcf1c41efa7e42917232507"; // Replace this with y
 
 app.use(cors());
 
-// Define the weather API endpoint
+// Defining the API endpoint
 app.get('/api/weather', async (req, res) => {
   const { location } = req.query;
 
